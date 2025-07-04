@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Position Example</title>
+  <style>
+    body {
+      height: 2000px; 
+      padding: 20px;
+      font-family: Arial;
+    }
+    .box {
+      width: 150px;
+      height: 100px;
+      background-color: lightblue;
+      border: 2px solid #000;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    .sb {
+      position: static;
+    }
+    .rb {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background-color: lightgreen;
+    }
+    .ab{
+      position: absolute;
+      top: 150px;
+      left: 200px;
+      background-color: lightcoral;
+    }
+    .fb {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: gold;
+    } 
+    .stb {
+      position: sticky;
+      top: 0;
+      background-color: plum;
+    }
+
+    .spacer {
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box sb">Static Box</div>
+
+  <div class="box rb">Relative Box</div>
+
+  <div class="box ab">Absolute Box</div>
+
+  <div class="box fb">Fixed Box</div>
+
+  <div class="spacer"></div>
+
+  <div class="box stb">Sticky</div>
+
+</body>
+</html>
