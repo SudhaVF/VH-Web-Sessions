@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Example</title>
+  <style>
+    /*Universal Selector */
+    * {
+      font-family: Arial, sans-serif;
+    }
+
+    /*Type Selector */
+    h1 {
+      color: darkblue;
+    }
+
+    /*Class Selector */
+    .box {
+      background-color: lightyellow;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    /*ID Selector */
+    #header {
+      background-color: lightblue;
+      padding: 10px;
+    }
+
+    /* Grouping Selector */
+    h2, h3, p {
+      margin: 10px 0;
+    }
+
+    /*Descendant Selector */
+    div p {
+      color: green;
+    }
+
+    /* Child Selector */
+    ul > li {
+      color: purple;
+    }
+
+    /*Adjacent Sibling Selector */
+    h2 + p {
+      font-style: italic;
+    }
+
+    /*General Sibling Selector */
+    h3 ~ p {
+      color: brown;
+    }
+
+    /* Attribute Selector */
+    input[type="text"] {
+      border: 2px solid gray;
+      padding: 5px;
+    }
+
+    /* Pseudo-class Selector */
+    a:hover {
+      color: red;
+    }
+
+    /* Pseudo-element Selector */
+    p::first-letter {
+      font-size: 200%;
+      color: blue;
+    }
+
+    /* Other Pseudo-class */
+    li:first-child {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <h1>CSS Selectors Demo</h1>
+  </div>
+
+  <div class="box">
+    <h2>Grouping & Descendant</h2>
+    <p>This is paragraph</p>
+    <p>One more paragraph</p>
+  </div>
+
+  <h2>Adjacent Sibling Selector</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam laborum placeat velit. Tempora hic doloremque quo esse incidunt! Neque illo impedit sapiente doloremque nisi laudantium fugiat velit officiis iste sed.</p>
+
+  <h3>General Sibling Example</h3>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime minima deserunt ex modi autem a sed, 
+    quibusdam nulla? Excepturi alias illum fugiat maxime aperiam debitis cumque at nemo libero modi.</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit aspernatur optio mollitia sit quis, eligendi porro, omnis repellat voluptatem sunt cupiditate excepturi veniam explicabo, dignissimos nisi laborum similique consequuntur atque!
+  Atque iusto sunt consequatur! Ex itaque earum nemo, placeat unde fuga ullam quos tenetur, ipsa adipisci error distinctio eaque cumque quam aliquid quidem esse dolorum a eligendi. Voluptas, asperiores sed.</p>
+
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+  </ul>
+
+  <p>Check <a href="#">this link</a> and hover over it.</p>
+
+  <input type="text" placeholder="Attribute Selector">
+
+</body>
+</html>
