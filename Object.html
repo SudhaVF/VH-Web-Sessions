@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person ={
+            name:"Sudha",
+            age:22,
+            isStudent:false
+        };
+        console.log(person.name);
+        console.log(person.age);
+        console.log(person.isStudent);
+
+        /* Adding Properties */
+        person.city = "Bangalore";
+        person.age = 31;
+        console.log(person.city);
+        console.log(person.age);
+
+        /* Object with function */
+        let car = {
+            brand : "Toyota",
+            model : "Camry",
+            start : function(){
+                console.log("Car has started");
+            }
+        };
+        car.start();
+
+        /* Nested Object */
+        let student = {
+            name : "Anu",
+            marks : {
+                math : 90,
+                science : 85
+            }
+        };
+        console.log(student.marks.math);
+    </script>
+</body>
+</html>

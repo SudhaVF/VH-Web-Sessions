@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Creating an Array */
+        let fruits = ["apple","cherry","banana","Guava"];
+        console.log(fruits);
+
+        /* Accessing array elements */
+        console.log(fruits[0]);
+        console.log(fruits[2]);
+
+        /*Modifying array elements */
+        fruits[1]="Mango";
+        console.log(fruits);
+
+        /*Length of the array */
+        console.log(fruits.length);
+
+        /*Adding elements to array */
+        fruits.push("Orange");
+        fruits.unshift("grape");
+        console.log(fruits);
+
+        /*Removing elements from the array */
+        fruits.pop();
+        fruits.shift();
+        console.log(fruits);
+
+        /* for loop */
+        for(let i=0;i<fruits.length;i++){
+            console.log(fruits[i]);
+        }
+
+        /* for Each loop */
+        fruits.forEach(function(fruit){
+            console.log(fruit);
+        });
+    </script>
+</body>
+</html>
